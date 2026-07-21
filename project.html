@@ -6,32 +6,30 @@
         <title>グルメ</title>
         <link rel="stylesheet" href="profect_style.css">
         <script src="gourmet.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     </head>
     <body>
-        <h1>グルメ情報(検索結果は2件)</h1>
-        <h2>検索結果1件目</h2>
-        <ul>
-            <li>名前:バグダットカフェ Bagdadcafe/モータウン MOTOWN</li>
-            <li>アクセス:京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。</li>
-            <li>住所:東京都八王子市明神町4-6-12 ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F</li>
-            <li>予算:3001~400円</li>
-            <li>ジャンル:居酒屋</li>
-            <li>営業時間: 月～日、祝日、祝前日: 17:00～21:00 （料理L.O. 20:00 ドリンクL.O. 20:00）</li>
-            <li>最寄駅: 京王八王子</li>
-            <li>サブジャンル: ダイニングバー・バル</li>
-        </ul>
-        
-        <h2>検索結果2件目</h2>
-        <ul>
-            <li>名前: 隠れ家バル Funny&Bouquet</li>
-            <li>アクセス: JR八王子駅北口徒歩1分/京王八王子駅徒歩3分</li>
-            <li>住所: 東京都八王子市東町12-14</li>
-            <li>予算: 2001～3000円</li>
-            <li>キャッチコピー: 2.5時間飲み放題付2000円~ 【★少人数様ソファー★】</li>
-            <li>ジャンル: 居酒屋</li>
-            <li>営業時間: 月～日、祝日、祝前日: 17:00～翌5:00 （料理L.O. 翌3:00 ドリンクL.O. 翌4:00）</li>
-            <li>最寄駅:八王子</li>
-            <li>サブジャンル:ダイニングバー・バル</li>
-        </ul>
+        <label for="search">検索したいジャンルを選択してください</label>
+        <select name="search" id="search">
+        <option value="G001">居酒屋</option>
+        <option value="G002">ダイニングバー・バル</option>
+        <option value="G003">創作料理</option>
+        <option value="G004">和食</option>
+        <option value="G005">洋食</option>
+        <option value="G006">イタリアン・フレンチ</option>
+        <option value="G007">中華</option>
+        <option value="G008">焼肉・ホルモン</option>
+        <option value="G009">アジア・エスニック料理</option>
+        <option value="G010">各国料理</option>
+        <option value="G011">カラオケ・パーティ</option>
+        <option value="G012">バー・カクテル</option>
+        <option value="G013">ラーメン</option>
+        <option value="G014">カフェ・スイーツ</option>
+        <option value="G017">韓国料理</option>
+        <option value="G016">お好み焼き・もんじゃ</option>
+        <option value="G015">その他グルメ</option>
+        </select>
+
+        <button id="kensaku">検索</button>
     </body>
 </html>
